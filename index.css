@@ -8,15 +8,15 @@ body{
 .svg1{
     position: absolute;
     z-index: 0;
-    height: 100vh;
-    top: -50px;
-    left:-5200px;
+    height: 102vh;
+    left:-1200px;
+    top:-10px;
 }
 
 .svg2{
     position: absolute;
     z-index: 0;
-    height: 100vh;
-    top: -50px;
-    left:6000px;
+    top:-10px;
+    height: 102vh;
+    left: 1350px;
 }
