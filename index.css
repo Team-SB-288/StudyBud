@@ -1,9 +1,6 @@
 body{
-    background-color: rgb(44, 3, 83);
-    background-image: url(IMAGE/drawing.svg);
-    background-position: -1000px -700px;
-    background-repeat: no-repeat; 
     margin:0;
     padding: 0;
     overflow: hidden;
+    text-align: center;
 }
