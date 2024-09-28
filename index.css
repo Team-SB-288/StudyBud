@@ -27,4 +27,7 @@
     background-color: #61C2D4;
     border-radius: 5vw;
     font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
