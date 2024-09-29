@@ -86,5 +86,20 @@
         width: 80%;
         height: 50px;
         margin: 2vw;
+        font-size: 18px;
+    }
+    .container{
+        top:25%;
+        width: 90%;
+    }
+    .logo-container{
+        font-size: 24px;
+        &>.logo-line{
+            width: 50px;
+            height: 2px;
+        }
+    }
+    .slogan{
+        font-size: 12px;
     }
 }
