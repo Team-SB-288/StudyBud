@@ -4,8 +4,58 @@
     padding: 0;
 }
 
-nav{
+header{
     width: 100vw;
-    height: 10vh;
+    height: 100%;
     display: flex;
+    background-color: #61C2D4;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: none;
+    
+    & .nav-container{
+        width: 50%;
+        display: flex;
+        align-items: inherit;
+        justify-content: space-between;
+    }
+
+    & nav{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+        & a{
+            text-decoration: none;
+            color: black;
+            font-size: calc(max(1.5vw, 100%));
+            font-weight: 900;
+        }
+    }
+}
+
+.current{
+    text-shadow: 0 5px 0px grey;
+    position: relative;
+    bottom: 5px;
+}
+
+.search-bar{
+    margin-right: 50px;
+    border-radius: 100vw;
+    width: 20vw;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #D9D9D9;
+    display: flex;
+
+    & input{
+        border: none;
+        padding: 10px;
+        background-color: #D9D9D9;
+    }    
+
+    & img{
+        min-width: 50%;
+    }
 }
