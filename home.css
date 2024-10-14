@@ -60,4 +60,6 @@ header{
     }
 }
 
-@media screen mi
+input:focus{
+    border: 0px;
+}
