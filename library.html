@@ -11,28 +11,58 @@
 
 <body>
     <nav>
-        <div class="navbar">
-            <div class="menu">
-                <div class="logo">
-                    <img src="/StudyBud/IMAGE/logo.png" alt="" class="logo">
-                </div>
+        <header>
+            <div class="nav-container">
+                <a href="home.html"><img src="IMAGE/logo.png" alt="StudyBud"></a>
+                <nav>
+                    <a class="current" href="home.html">Home</a>
+                    <a href="books.html">Books</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="notification.html">Notifications</a>
+                    <a href="Profile.html">Profile</a>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" name="search" placeholder="Search">
+                <button type="submit"><img width="30px" src="IMAGE/search.svg" alt="Search"></button>
+            </div>
+        </header>
+    </nav>
 
-                <div class="list">
-                    <ul>
-                        <li>Home</li>
-                        <li>Books</li>
-                        <li>Courses</li>
-                        <li>Notification</li>
-                        <li>Profile</li>
-                    </ul>
+    <aside>
+       
+
+        <div class="side jcc column aic flex">
+            <div class="txt"> <h2>Filter</h2> </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Select standerd</button>
+                <div class="dropdown-content">
+                    <a href="#">9</a>
+                    <a href="#">11</a>
+                    <a href="#">12</a>
                 </div>
             </div>
 
-            <div class="search">
+            <div class="dropdown">
+                <button class="dropbtn">Select subject</button>
+                <div class="dropdown-content">
+                    <a href="#">Sub 1</a>
+                    <a href="#">Sub 2</a>
+                    <a href="#">Sub 3</a>
+                </div>
+            </div>
 
+            <div class="dropdown">
+                <button class="dropbtn">Select Degree</button>
+                <div class="dropdown-content">
+                    <a href="#">Deg 1</a>
+                    <a href="#">Deg 2</a>
+                    <a href="#">Deg 3</a>
+                </div>
             </div>
         </div>
-    </nav>
+    </aside>
 </body>
 
 </html>

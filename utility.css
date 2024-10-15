@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+}
