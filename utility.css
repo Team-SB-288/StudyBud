@@ -13,3 +13,11 @@
 .column{
     flex-direction: column;
 }
+
+.jcsa{
+    justify-content: space-around;
+}
+
+.jcba{
+    justify-content: space-between;
+}
