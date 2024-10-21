@@ -111,3 +111,7 @@ input::placeholder{
     border-radius: 10px;
     font-size: 25px;
 }
+
+.next {
+    display: none;
+}

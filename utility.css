@@ -21,3 +21,10 @@
 .jcba{
     justify-content: space-between;
 }
+
+a:active{
+    position: relative;
+    top:0.5vw;
+    right: 0.5vw;
+    box-shadow: 0 0;
+}

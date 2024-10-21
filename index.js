@@ -3,5 +3,5 @@ function RedirectToLogin() {
 }
 
 function RedirectToSignUp() {
-    window.location.href = "signup.html"; // Change URL to the desired page
+    window.location.href = "register.html"; // Change URL to the desired page
 }
