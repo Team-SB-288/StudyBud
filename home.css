@@ -29,7 +29,7 @@ header{
             text-decoration: none;
             color: black;
             font-size: calc(max(1.5vw, 100%));
-            font-weight: 900;
+            /* font-weight: 900; */
         }
     }
 }
