@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            margin: 0;
+            text-align: center;
+            background-color: #61C2D4;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #85cad6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            width: 10vw;
+            border-radius: 10px;
+            border: none;
+            height: 20px;
+            font-size: 16px;
+            background-color: #61C2D4;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #84d0dd;
+            font-size: 15px;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .side {
+            background-color: #4095A5;
+            width: 10vw;
+            height: 90vh;
+            gap: 10px;
+        }
+
+        .side-info * {
+            margin-bottom: 5px;
+        }
+
+        .side-info .txt {
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="side jcc column aic flex">
+        <div class="txt">
+            <h2>Filter</h2>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Select standerd</button>
+            <div class="dropdown-content">
+                <a href="#">9</a>
+                <a href="#">11</a>
+                <a href="#">12</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Select subject</button>
+            <div class="dropdown-content">
+                <a href="#">Sub 1</a>
+                <a href="#">Sub 2</a>
+                <a href="#">Sub 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Select Degree</button>
+            <div class="dropdown-content">
+                <a href="#">Deg 1</a>
+                <a href="#">Deg 2</a>
+                <a href="#">Deg 3</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('click', function () {
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown').forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        otherDropdown.classList.remove('active');
+                    }
+                });
+
+                // Toggle the clicked dropdown
+                dropdown.classList.toggle('active');
+            });
+        });
+
+        // Close dropdowns if clicked outside
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
