@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .navbar {
     margin: 0 0 1vh 0;
     height: 10vh;
@@ -29,8 +38,8 @@
     height: 100%;
     text-decoration: none;
     list-style-type: none;
-    gap: 30px;
-    font-size: 25px;
+    gap: 1vw;
+    font-size: calc(max(1.5vw, 100%));
 }
 
 ul a {
@@ -69,6 +78,28 @@ input {
 #search:focus {
     border: none;
     outline: none;
+}
+
+.side {
+    background-color: #4095A5;
+    width: 14.64vw;
+    height: 88vh;
+    gap: 10px;
+}
+
+.side-info * {
+    margin-bottom: 5px;
+}
+
+.side-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-info .txt {
+    margin-top: 10px;
 }
 
 .dropdown {
@@ -131,7 +162,7 @@ input {
     position: absolute;
     font-size: 20px;
     left: 140px;
-    top: -1px;
+    top: 1px;
     transform: rotate(270deg);
 }
 
@@ -157,24 +188,58 @@ input {
     transition: font-size 0.3s ease-in-out;
 }
 
-.side {
-    background-color: #4095A5;
-    width: 14.64vw;
-    height: 88vh;
+.advertise {
+    width: 80vw;
+    height: 45vh;
+    border-radius: 10px;
+    margin-top: 1.5vh;
+    background-color: #d9d9d9;
+}
+
+.container {
     gap: 10px;
+    flex-wrap: wrap;
+    height: 88vh;
+    width: 80vw;
+    padding: 0;
 }
 
-.side-info * {
-    margin-bottom: 5px;
+.cardcontainer {
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 88vh;
+    width: 84.90vw;
+    margin: 0 0 0 1vh;
+    overflow-y: auto;
+    overflow-x: wrap;
+    background-color: #f7dddd;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
-.side-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.cardcontainer::-webkit-scrollbar {
+    display: none;
 }
 
-.side-info .txt {
-    margin-top: 10px;
+.card {
+    width: 11.72vw;
+    height: 30vh;
+    margin: 0.5vh 0.5vw 0.5vw;
+    position: relative;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+.container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar */
 }

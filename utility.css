@@ -37,9 +37,3 @@ button:active{
     right: 0.2vw;
     box-shadow: 0 0;
 }
-
-.current{
-    text-shadow: 0 5px 0px grey;
-    position: relative;
-    bottom: 5px;
-} 
