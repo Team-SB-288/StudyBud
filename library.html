@@ -7,22 +7,33 @@
     <title>StudyBud : Library</title>
     <link rel="stylesheet" href="library.css">
     <link rel="stylesheet" href="utility.css">
+    <script src="library.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="navbar flex aic">
-            <div class="menubar flex ">
+            <div class="menubar flex">
                 <div class="logo">
                     <img class="logo" src="/StudyBud/IMAGE/logo.png" alt="SyudyBud">
                 </div>
                 <div class="menu">
                     <ul class="flex jcc">
-                        <a target="_blank" href="home.html"><li>Home</li></a>
-                        <a target="_blank" href=""><li>Books</li></a>
-                        <a target="_blank" href="course.html"><li>Courses</li></a>
-                        <a target="_blank" href="notification.html"><li>Notification</li></a>
-                        <a target="_blank" href="account.html"><li>Profile</li></a> 
+                        <a target="_blank" href="home.html">
+                            <li>Home</li>
+                        </a>
+                        <a target="_blank" href="">
+                            <li>Books</li>
+                        </a>
+                        <a target="_blank" href="course.html">
+                            <li>Courses</li>
+                        </a>
+                        <a target="_blank" href="notification.html">
+                            <li>Notification</li>
+                        </a>
+                        <a target="_blank" href="account.html">
+                            <li>Profile</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -34,24 +45,31 @@
     </nav>
 
     <aside>
-        
+
         <div class="side column aic flex">
-            <div class="side-info column aic flex">
+            <div class="side-info flex column aic">
                 <div class="txt">
                     <h2>Filter</h2>
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn btn1">Select standerd</button>
+                    <button class="dropbtn btn1">
+                        Select standerd
+                        <span class="dropicon">&#9662;</span>
+                    </button>
                     <div class="dropdown-content">
                         <a href="#">9</a>
                         <a href="#">11</a>
                         <a href="#">12</a>
                     </div>
+
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn btn2">Select subject</button>
+                    <button class="dropbtn btn2">
+                        Select subject
+                        <span class="dropicon">&#9662;</span>
+                    </button>
                     <div class="dropdown-content">
                         <a href="#">Sub 1</a>
                         <a href="#">Sub 2</a>
@@ -60,13 +78,17 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn btn3">Select Degree</button>
+                    <button class="dropbtn btn3">
+                        Select Degree
+                        <span class="dropicon">&#9662;</span>
+                    </button>
                     <div class="dropdown-content">
                         <a href="#">Deg 1</a>
                         <a href="#">Deg 2</a>
                         <a href="#">Deg 3</a>
                     </div>
                 </div>
+                <button class="submit">Apply</button>
             </div>
         </div>
     </aside>
