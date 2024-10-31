@@ -19,6 +19,14 @@
     align-items: center;
 }
 
+.aifs{
+    align-items: flex-start;
+}
+
+.jcfs{
+    justify-content: flex-start;
+}
+
 .column{
     flex-direction: column;
 }
@@ -27,7 +35,7 @@
     justify-content: space-around;
 }
 
-.jcba{
+.jcsb{
     justify-content: space-between;
 }
 
