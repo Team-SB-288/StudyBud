@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
     <style>
+        .side {
+            background-color: #4095A5;
+            width: 14.64vw;
+            height: 88vh;
+            gap: 10px;
+        }
+
+        .side-info * {
+            margin-bottom: 5px;
+        }
+
+        .side-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .side-info .txt {
+            margin-top: 10px;
+        }
+
         .dropdown {
             position: relative;
             display: inline-block;
+            height: 26px;
+            width: 12vw;
         }
 
         .dropdown-content {
@@ -39,72 +63,108 @@
         }
 
         .dropbtn {
-            width: 10vw;
-            border-radius: 10px;
+            width: 12vw;
+            border-radius: 30px;
             border: none;
-            height: 20px;
-            font-size: 16px;
+            height: 3vh;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: left;
+            padding-left: 10px;
             background-color: #61C2D4;
         }
 
         .dropdown:hover .dropbtn {
             background-color: #84d0dd;
-            font-size: 15px;
             border: none;
+            transition: font-size 0.3s ease-in-out;
             border-radius: 30px;
+
+            .dropicon {
+                transform: rotate(0deg);
+            }
         }
 
-        .side {
-            background-color: #4095A5;
-            width: 10vw;
-            height: 90vh;
-            gap: 10px;
+        .dropicon {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            font-size: 20px;
+            left: 10.3vw;
+            top: 0px;
+            transform: rotate(270deg);
+            transition: all 0.3s ease-in-out;
         }
 
-        .side-info * {
-            margin-bottom: 5px;
+        .submit {
+            width: 12vw;
+            border-radius: 30px;
+            border: none;
+            height: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            background-color: #61C2D4;
+            margin-top: 5px;
         }
 
-        .side-info .txt {
-            margin-top: 10px;
+        .submit:hover {
+            font-size: 10px;
+            background-color: #84d0dd;
+            transition: font-size 0.3s ease-in-out;
         }
     </style>
     <link rel="stylesheet" href="utility.css">
 </head>
 
 <body>
-    <div class="side jcc column aic flex">
-        <div class="txt">
-            <h2>Filter</h2>
-        </div>
+    <aside>
 
-        <div class="dropdown">
-            <button class="dropbtn">Select standerd</button>
-            <div class="dropdown-content">
-                <a href="#">9</a>
-                <a href="#">11</a>
-                <a href="#">12</a>
+        <div class="side column aic flex">
+            <div class="side-info flex column aic">
+                <div class="txt">
+                    <h2>Filter</h2>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn btn1">
+                        Select standerd
+                        <span class="dropicon">&#9662;</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">9</a>
+                        <a href="#">11</a>
+                        <a href="#">12</a>
+                    </div>
+
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn btn2">
+                        Select subject
+                        <span class="dropicon">&#9662;</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Sub 1</a>
+                        <a href="#">Sub 2</a>
+                        <a href="#">Sub 3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn btn3">
+                        Select Degree
+                        <span class="dropicon">&#9662;</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Deg 1</a>
+                        <a href="#">Deg 2</a>
+                        <a href="#">Deg 3</a>
+                    </div>
+                </div>
+                <button class="submit">Apply</button>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Select subject</button>
-            <div class="dropdown-content">
-                <a href="#">Sub 1</a>
-                <a href="#">Sub 2</a>
-                <a href="#">Sub 3</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Select Degree</button>
-            <div class="dropdown-content">
-                <a href="#">Deg 1</a>
-                <a href="#">Deg 2</a>
-                <a href="#">Deg 3</a>
-            </div>
-        </div>
-    </div>
+    </aside>
 
     <script>
         document.querySelectorAll('.dropdown').forEach(dropdown => {
