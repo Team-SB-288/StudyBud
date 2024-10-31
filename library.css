@@ -150,10 +150,12 @@ input {
 
 .dropdown:hover .dropbtn {
     background-color: #84d0dd;
-    font-size: 11px;
     border: none;
-    transition: font-size 0.5s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
     border-radius: 30px;
+    .dropicon{
+        transform: rotate(0deg);
+    }
 }
 
 .dropicon {
@@ -161,14 +163,10 @@ input {
     padding: 0px;
     position: absolute;
     font-size: 20px;
-    left: 140px;
+    left: 10.3vw;
     top: 1px;
     transform: rotate(270deg);
-}
-
-.dropicon:hover {
-    transform: rotate(0deg);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .submit {
@@ -230,14 +228,6 @@ input {
     background-color: #d9d9d9;
     padding: 0;
 }
-
-
-
-
-
-
-
-
 
 .container::-webkit-scrollbar {
     display: none;
