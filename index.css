@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -105,5 +105,43 @@
     }
     .slogan{
         font-size: 12px;
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #F4EDED;
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #F7DDDD;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+.title{
+    font-size: 2vw;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:425px){
+    .container{
+        width: 90vw;
     }
 }
