@@ -87,3 +87,9 @@ input {
     border: none;
     outline: none;
 }
+
+.profile-side-bar{
+    background-color: black;
+    width: 15%;
+    margin-top: 10px;
+}
