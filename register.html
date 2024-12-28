@@ -29,32 +29,26 @@
 
 
         <div class="right">
-            <div class="txt">
+            <div class="reg-txt">
                 <h2>Register</h2>
             </div>
-
-            <div class="rginfo">
-                <div clas="pfp">
-                    <div class="inputs">
-                        <div class="pfplogo">
-                            <div class="pfp-icon"><img class="icon" src="IMAGE/pfp-icon.png" alt="pfp icon"></div>
-                        </div>
+            <form action="" method="post">
+                <div class="details">
+                    <div class="sel-pfp">
+                        <img id="pfp" src="IMAGE/default-profile.jpg" width="250px" height="250px" alt="Selected Profile Picture">
+                        <input type="file" id="select-pfp" name="pfp" accept="image/*">
                     </div>
-                    <button class="upload">UPLOAD</button>
-                </div>
-
-                <div class="info">
-                    <div class="inputs">
-                        First name<br><input type="text" placeholder="Your name"> <br>
-                        Last name<br> <input type="text" placeholder="Family name"> <br>
-                        phone number<br><input type="text" placeholder="1234567890"> <br>
-                        Email<br><input type="text" placeholder=""> <br>
-                        password<br><input type="password" name="Password" id="password"> <br>
+                    <script src="register.js"></script>
+                    <div class="user-details">
+                        <input type="text" placeholder="Name" required autofocus>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
                     </div>
                 </div>
-            </div>
-
-
+                <input type="submit" value="Register">
+            </form>
         </div>
     </div>
 </body>
