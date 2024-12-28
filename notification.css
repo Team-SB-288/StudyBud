@@ -87,3 +87,24 @@ input {
     border: none;
     outline: none;
 }
+
+.notification-container{
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+
+    & .notification-logo{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 100px;
+    }
+
+    & .notification-details{
+        width: 90%;
+        height: 100px;
+        background-color: black;
+    }
+}
