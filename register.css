@@ -78,7 +78,7 @@ body{
 .txt{
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: start;
 }
 
 .inputs *{
@@ -114,4 +114,53 @@ input::placeholder{
 
 .next {
     display: none;
+}
+
+.pfp-icon{
+    width: 25px;
+    height: 25px;
+    background-color: #00000000;
+    border-radius: 100%;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    position:relative;
+    left: 140px;
+    top: 12px;
+}
+
+.pfplogo{
+    height: 30vh;
+    width: 30vh;
+    background-color: #d9d9d9;
+    border-radius: 100%;
+}
+
+.pfpbtn{
+    border-radius: 5vw;
+    height: 5vh;
+    width: 10vw;
+}
+
+.upload{
+    background-color:#d9d9d9;
+    text-align: center;
+    width: 10vw;
+    margin: auto;
+}
+
+.pfp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.rginfo{
+    display: flex;
+    gap: 10vw;
 }
