@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Filters</title>
+    <link rel="stylesheet" href="sidebar2.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <form id="filterForm">
+                <label for="standard">Standard:</label>
+                <select id="standard" name="standard">
+                    <option value="">Select Standard</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="UG">Undergraduate</option>
+                    <option value="PG">Postgraduate</option>
+                </select>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select Subject</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
+
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="">Select Degree</option>
+                    <option value="BSc">BSc</option>
+                    <option value="BTech">BTech</option>
+                    <option value="MSc">MSc</option>
+                    <option value="MTech">MTech</option>
+                </select>
+
+                <button type="button" onclick="applyFilters()">Apply</button>
+            </form>
+        </div>
+
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <p>Filtered content will appear here based on the selected filters.</p>
+        </div>
+    </div>
+
+    <script>
+        function applyFilters() {
+            const standard = document.getElementById("standard").value;
+            const subject = document.getElementById("subject").value;
+            const degree = document.getElementById("degree").value;
+
+            alert("Filters Applied:\nStandard: " + standard + "\nSubject: " + subject + "\nDegree: " + degree);
+            // Add filtering logic here (e.g., updating main content dynamically)
+        }
+    </script>
+
+</body>
+</html>

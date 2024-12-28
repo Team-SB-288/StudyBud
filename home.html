@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyBud : Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="general-files/utility.css">
-    <script src="home.js"></script>
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="/general-files/utility.css">
 </head>
 <body>
     <header>
         <div class="nav-container">
             <a href="home.html"><img src="IMAGE/logo.png" alt="StudyBud"></a>
             <nav>
-                <a target="_self" class="current" href="home.html">Home</a>
-                <a target="_self" href="library.html">Books</a>
-                <a target="_self" href="courses.html">Courses</a>
-                <a target="_self" href="notification.html">Notifications</a>
-                <a target="_self" href="Profile.html">Profile</a>
-            </nav>
+                <div class="menu">
+                    <ul class="flex jcc">
+                        <a target="_self" href="home.html">
+                            <li>Home</li>
+                        </a>
+                        <a target="_self" href="library.html">
+                            <li>Books</li>
+                        </a>
+                        <a arget="_self" href="course.html">
+                            <li>Courses</li>
+                        </a>
+                        <a target="_self" class="current" href="notification.html">
+                            <li>Notification</li>
+                        </a>
+                        <a target="_self" href="profile.html">
+                            <li>Profile</li>
+                        </a>
+                    </ul>
+                </div>
         </div>
-        <div class="search-bar">
-            <input type="text" name="search" placeholder="Search">
-            <button type="submit"><img width="30px" src="IMAGE/search.svg" alt="Search"></button>
+        <div class="searchbar flex aic">
+            <input "text" name="searchbar" id="search" placeholder="search here">
+            <img src="/IMAGE/search.svg" alt="..">
+        </div>
+        </nav>
         </div>
     </header>
-    <aside>
-        
-    </aside>
-    <main>
-        
-    </main>
 </body>
 </html>
