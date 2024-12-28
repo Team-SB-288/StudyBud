@@ -1,7 +1,9 @@
-function RedirectToLogin() {
-    window.location.href = "login.html"; // Change URL to the desired page
-}
+let login = document.getElementById('login-btn');
+let register = document.getElementById('register-btn');
 
-function RedirectToSignUp() {
-    window.location.href = "register.html"; // Change URL to the desired page
-}
+login.addEventListener('click', () => {
+  window.location.href = 'login.html';
+})
+register.addEventListener('click', () => {
+  window.location.href = 'register.html';
+})

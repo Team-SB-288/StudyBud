@@ -19,6 +19,14 @@
     align-items: center;
 }
 
+.aifs{
+    align-items: flex-start;
+}
+
+.jcfs{
+    justify-content: flex-start;
+}
+
 .column{
     flex-direction: column;
 }
@@ -27,13 +35,19 @@
     justify-content: space-around;
 }
 
-.jcba{
+.jcsb{
     justify-content: space-between;
 }
 
-a:active{
+button:active{
     position: relative;
-    top:0.5vw;
-    right: 0.5vw;
+    top:0.2vw;
+    right: 0.2vw;
     box-shadow: 0 0;
+}
+
+.current{
+    text-shadow: 0 5px 0px grey;
+    position: relative;
+    bottom: 5px;
 }
