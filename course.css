@@ -1,5 +1,23 @@
+html, body {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+
 body {
+    overflow-y: scroll;
+    scrollbar-width: none;
     font-family: Arial, sans-serif;
+}
+
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 header {
@@ -50,7 +68,20 @@ header {
     margin-top: 15px;
 }
 
+.menubar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.current {
+    text-shadow: 0 5px 0px grey;
+    position: relative;
+    bottom: 5px;
+}
+
+
 .menu>ul {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -73,6 +104,7 @@ ul a {
 
 .searchbar img {
     position: relative;
+    top: 21%;
     right: 40px;
     width: 7%;
 }
@@ -165,7 +197,7 @@ aside {
 
 main {
     display: flex;
-    margin-top: 15px;
+    margin-top: 1vh;
     gap: 10px;
 }
 

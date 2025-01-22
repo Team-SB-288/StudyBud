@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyBud : Library</title>
     <link rel="stylesheet" href="library.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="/studybud/general-files/utility.css">
     <script src="library.js"></script>
 </head>
 
@@ -31,67 +31,53 @@
                         <a target="_self" href="notification.html">
                             <li>Notification</li>
                         </a>
-                        <a target="_self" href="account.html">
+                        <a target="_self" href="profile.html">
                             <li>Profile</li>
                         </a>
                     </ul>
                 </div>
-            </div>
-            <div class="searchbar flex aic">
-                <input "text" name="searchbar" id="search" placeholder="search here">
-                <img src="/StudyBud/IMAGE/search.svg" alt="..">
+                <div class="searchbar flex aic">
+                    <input "text" name="searchbar" id="search" placeholder="search here">
+                    <img src="/StudyBud/IMAGE/search.svg" alt="..">
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="main flex ">
         <aside>
+            <div class="txt">FILTERS</div>
 
-            <div class="side column aic flex">
-                <div class="side-info flex column aic">
-                    <div class="txt">
-                        <h2>Filter</h2>
-                    </div>
+            <form id="filterForm">
+                <label for="standard">Standard:</label>
+                <select id="standard" name="standard">
+                    <option value="">Select Standard</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="UG">Undergraduate</option>
+                    <option value="PG">Postgraduate</option>
+                </select>
 
-                    <div class="dropdown">
-                        <button class="dropbtn btn1">
-                            Select standerd
-                            <span class="dropicon">&#9662;</span>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">9</a>
-                            <a href="#">11</a>
-                            <a href="#">12</a>
-                        </div>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select Subject</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
 
-                    </div>
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="">Select Degree</option>
+                    <option value="BSc">BSc</option>
+                    <option value="BTech">BTech</option>
+                    <option value="MSc">MSc</option>
+                    <option value="MTech">MTech</option>
+                </select>
 
-                    <div class="dropdown">
-                        <button class="dropbtn btn2">
-                            Select subject
-                            <span class="dropicon">&#9662;</span>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Sub 1</a>
-                            <a href="#">Sub 2</a>
-                            <a href="#">Sub 3</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <button class="dropbtn btn3">
-                            Select Degree
-                            <span class="dropicon">&#9662;</span>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Deg 1</a>
-                            <a href="#">Deg 2</a>
-                            <a href="#">Deg 3</a>
-                        </div>
-                    </div>
-                    <button class="submit">Apply</button>
-                </div>
-            </div>
+                <button type="button" onclick="applyFilters()">Apply</button>
+            </form>
         </aside>
 
         <main>

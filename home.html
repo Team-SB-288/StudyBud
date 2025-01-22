@@ -10,11 +10,11 @@
 <body>
     <header>
         <div class="nav-container">
-            <a href="home.html"><img src="IMAGE/logo.png" alt="StudyBud"></a>
+            <a href="home.html" class="logo"><img src="IMAGE/logo.png" alt="StudyBud"></a>
             <nav>
                 <div class="menu">
-                    <ul class="flex jcc">
-                        <a target="_self" href="home.html">
+                    <ul class="jcc">
+                        <a class="current" target="_self" href="home.html">
                             <li>Home</li>
                         </a>
                         <a target="_self" href="library.html">
@@ -23,7 +23,7 @@
                         <a arget="_self" href="course.html">
                             <li>Courses</li>
                         </a>
-                        <a target="_self" class="current" href="notification.html">
+                        <a target="_self" href="notification.html">
                             <li>Notification</li>
                         </a>
                         <a target="_self" href="profile.html">
@@ -34,10 +34,47 @@
         </div>
         <div class="searchbar flex aic">
             <input "text" name="searchbar" id="search" placeholder="search here">
-            <img src="/IMAGE/search.svg" alt="..">
+            <img src="/studybud/IMAGE/search.svg" alt="..">
         </div>
         </nav>
         </div>
     </header>
+    <main>
+        <aside>
+            <div class="txt">FILTERS</div>
+
+            <form id="filterForm">
+                <label for="standard">Standard:</label>
+                <select id="standard" name="standard">
+                    <option value="">Select Standard</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="UG">Undergraduate</option>
+                    <option value="PG">Postgraduate</option>
+                </select>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select Subject</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Engineering">Engineering</option>
+                </select>
+
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="">Select Degree</option>
+                    <option value="BSc">BSc</option>
+                    <option value="BTech">BTech</option>
+                    <option value="MSc">MSc</option>
+                    <option value="MTech">MTech</option>
+                </select>
+
+                <button type="button" onclick="applyFilters()">Apply</button>
+            </form>
+        </aside>
+
+    </main>
 </body>
 </html>
