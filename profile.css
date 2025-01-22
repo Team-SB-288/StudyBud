@@ -93,7 +93,6 @@ input {
     width: 15vw;
     margin-top: 10px;
     height: calc(100vh - 10vh - 10px);
-    padding: ;
 
     & img {
         width: 70%;
